@@ -1,0 +1,21 @@
+body{
+    background-color: lightgray;
+    margin: 30px;
+}s
+h1{
+    color: red;
+}
+h2{
+    color: blue;
+}
+p{
+    color: gray;
+}
+li{
+    color: green;
+    text-decoration: none;
+}
+li a{
+    color: green;
+    text-decoration: none;
+}
