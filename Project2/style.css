@@ -233,59 +233,63 @@ body{
 .menu-description {
     color: #111;
     text-align: left;
-    max-width: 320px;
+    max-width: 280px;
     flex: 1;
 }
 
 .menu-description h4 {
-    font-size: 14px;
+    font-size: 30px;
     letter-spacing: 0.28em;
     font-weight: 700;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
     color: #ff9800;
     text-transform: uppercase;
 }
 
 .menu-description h2 {
-    font-size: clamp(2rem, 3vw, 2.75rem);
-    font-weight: 800;
-    margin-bottom: 16px;
+    font-size: clamp(2.5rem, 3vw, 3.8rem);
+    font-weight: 1000;
+    margin-bottom: 50px;
     line-height: 1.05;
     color: #111;
 }
 
 .menu-description p {
     color: #666;
-    font-weight: 500;
-    line-height: 1.6;
-    margin: 0 0 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.75;
+    margin: 0 0 10px;
 }
 
 .menu-items {
     display: flex;
     align-items: stretch;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     gap: 18px;
-    flex: 1;
-    max-width: 360px;
+    flex: 0 0 400px;
+    max-width: 300px;
+    margin-left: 20px;
 }
 
 .mid-hero {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     background: linear-gradient(135deg, #fff8ee 0%, #f7efe6 100%);
-    padding: 60px 80px;
+    padding: 56px 76px;
     gap: 40px;
     border-radius: 32px;
-    margin: 0 40px 60px;
+    margin: 0 auto 60px;
+    max-width: 1360px;
     box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
 }
 
 .mid-hero img {
-    height: 320px;
-    width: 320px;
+    width: 460px;
+    height: auto;
+    max-width: 100%;
     object-fit: contain;
 }
 
@@ -293,37 +297,46 @@ body{
     flex: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .premium-beef,
-.fresh-ingredients {
+.fresh-ingredients,
+.flame-grilled,
+.made-order {
     display: flex;
     align-items: center;
     gap: 16px;
     background: #fff;
-    padding: 18px 20px;
-    border-radius: 20px;
+    padding: 20px 20px;
+    border-radius: 10px;
     border: 1px solid #f0e5db;
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .premium-beef:hover,
-.fresh-ingredients:hover {
+.fresh-ingredients:hover,
+.flame-grilled:hover,
+.made-order:hover {
     transform: translateY(-4px);
     box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
 }
 
 .premium-beef img,
-.fresh-ingredients img {
-    height: 76px;
-    width: 76px;
+.fresh-ingredients img,
+.flame-grilled img,
+.made-order img {
+    width: 50px;
+    height: 50px;
     object-fit: contain;
 }
 
 .premium-beef h2,
-.fresh-ingredients h2 {
-    font-size: 18px;
+.fresh-ingredients h2,
+.flame-grilled h2,
+.made-order h2 {
+    font-size: 12px;
     font-weight: 700;
     color: #ff9800;
     margin-bottom: 6px;
@@ -331,18 +344,21 @@ body{
 }
 
 .premium-beef p,
-.fresh-ingredients p {
+.fresh-ingredients p,
+.flame-grilled p,
+.made-order p {
     margin: 0;
     color: #666;
-    font-size: 14px;
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1.6;
 }
 
 @media (max-width: 900px) {
     .mid-hero {
         flex-direction: column;
-        padding: 40px 24px;
-        margin: 0 20px 40px;
+        padding: 36px 20px;
+        margin: 0 18px 40px;
+        gap: 28px;
     }
 
     .menu-description,
@@ -352,8 +368,14 @@ body{
         width: 100%;
     }
 
+    .menu-items {
+        flex: 1;
+        max-width: none;
+    }
+
     .mid-hero img {
-        height: 260px;
-        width: 260px;
+        width: 100%;
+        max-width: 380px;
+        height: auto;
     }
 }
