@@ -4,16 +4,35 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <title>Burger Haus</title>
+        <title>Simple Calculator</title>
     </head>
     <body>
-        <h1>Burger Haus</h1>
-        <h2>Welcome to our restaurant</h2>
-        <p>Please choose an option:</p>
-        <ul>
-            <li><a href="https://www.google.com/">Google</a></li>
-            <li><a href="https://www.youtube.com/">Youtube</a></li>
-            <li><a href="https://www.facebook.com/">Facebook</a></li>
-        </ul>
+        <div class="calculator">
+            <input type="text" id="display" value="0" disabled>
+            <div class="buttons">
+                <button class="btn clear" data-action="clear">C</button>
+                <button class="btn operator" data-value="/">/</button>
+                <button class="btn operator" data-value="*">×</button>
+                <button class="btn operator" data-value="-">−</button>
+
+                <button class="btn number" data-value="7">7</button>
+                <button class="btn number" data-value="8">8</button>
+                <button class="btn number" data-value="9">9</button>
+                <button class="btn operator" data-value="+">+</button>
+
+                <button class="btn number" data-value="4">4</button>
+                <button class="btn number" data-value="5">5</button>
+                <button class="btn number" data-value="6">6</button>
+                <button class="btn operator equal" data-action="equals">=</button>
+
+                <button class="btn number" data-value="1">1</button>
+                <button class="btn number" data-value="2">2</button>
+                <button class="btn number" data-value="3">3</button>
+                <button class="btn number zero" data-value="0">0</button>
+
+                <button class="btn number" data-value=".">.</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
     </body>
 </html>
